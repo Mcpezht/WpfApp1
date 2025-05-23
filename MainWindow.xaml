@@ -5,8 +5,35 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="WpfApp1" Height="450" Width="800">
     <Grid>
-
+        <Label Content="这是WpfApp1。看你妈呢，做的一坨屎你也想尝尝？那好吧（（" HorizontalAlignment="Left" Margin="31,25,0,0" VerticalAlignment="Top"/>
+        <Label Content="                                   抢鲜体验！！！（仅限大疆内部使用。）" HorizontalAlignment="Left" Margin="31,50,0,0" VerticalAlignment="Top" FontFamily="Gill Sans MT" FontSize="20"/>
+        <Label Content="在下方输入你的银行卡号，邮寄地址，邮寄方式，电话号码，身份证号，" HorizontalAlignment="Left" Margin="31,75,0,0" VerticalAlignment="Top" FontFamily="Gill Sans MT" FontSize="20"/>
+        <Label Content="即可收到来自SZ DJI Innovation Technology赠与的                                   早期测试版!!!" HorizontalAlignment="Left" Margin="31,100,0,0" VerticalAlignment="Top" FontFamily="Gill Sans MT" FontSize="20"/>
+        <Label Content="银行卡号：" HorizontalAlignment="Left" Margin="31,130,0,0" VerticalAlignment="Top"/>
+        <Label Content="地       址：" HorizontalAlignment="Left" Margin="31,150,0,0" VerticalAlignment="Top"/>
+        <Label Content="邮寄方式：" HorizontalAlignment="Left" Margin="31,170,0,0" VerticalAlignment="Top"/>
+        <Label Content="电       话：" HorizontalAlignment="Left" Margin="31,190,0,0" VerticalAlignment="Top"/>
+        <Label Content="姓       名：" HorizontalAlignment="Left" Margin="31,211,0,0" VerticalAlignment="Top"/>
+        <Label Content="身份证件：" HorizontalAlignment="Left" Margin="31,232,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="card" HorizontalAlignment="Left" Margin="94,134,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="666"/>
+        <TextBox x:Name="addr" HorizontalAlignment="Left" Margin="94,154,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="666"/>
+        <TextBox x:Name="deli" HorizontalAlignment="Left" Margin="94,174,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="666"/>
+        <TextBox x:Name="num" HorizontalAlignment="Left" Margin="94,194,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="666"/>
+        <TextBox x:Name="id" HorizontalAlignment="Left" Margin="94,236,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="666"/>
+        <TextBox x:Name="name" HorizontalAlignment="Left" Margin="94,215,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="666"/>
+        <Image HorizontalAlignment="Left" Height="25" Margin="38,57,0,0" VerticalAlignment="Top" Width="185" Source="/mavic.png"/>
+        <Image HorizontalAlignment="Left" Height="25" Margin="466,108,0,0" VerticalAlignment="Top" Width="184" Source="/mavic.png"/>
+        <Button Content="提交" HorizontalAlignment="Left" Margin="629,265,0,0" VerticalAlignment="Top" Height="32" Width="131" Click="Button_Click"/>
+        <Label HorizontalAlignment="Left" Margin="37,265,0,0" VerticalAlignment="Top" Height="137" Width="578">
+            <Label.BorderBrush>
+                <SolidColorBrush Color="Black"/>
+            </Label.BorderBrush>
+            <Label.BorderThickness>1</Label.BorderThickness>
+        </Label>
+        <ScrollViewer x:Name="logScrollViewer" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled" Margin="19,265,171,0">
+            <TextBlock x:Name="log" Text="日志..." TextWrapping="Wrap" FontFamily="Consolas" HorizontalAlignment="Left" Margin="38,265,0,0" VerticalAlignment="Top" Height="126" Width="564" TextTrimming="CharacterEllipsis"/>
+        </ScrollViewer>
     </Grid>
 </Window>

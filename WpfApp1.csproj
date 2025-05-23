@@ -8,4 +8,12 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="mavic.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="mavic.png" />
+  </ItemGroup>
+
 </Project>
